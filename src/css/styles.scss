@@ -1,0 +1,93 @@
+$dark_wine: #622324;
+$light_wine: #804E4E;
+$border: 0.3rem white solid;
+
+* {
+  color: white;
+  font-family: Calibri;
+  //font-size: 2rem;
+}
+
+header {
+  background-color: $light_wine;
+}
+
+main {
+  background-color: $dark_wine;
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+img {
+  padding: 15% 10% 10% 10%;
+  width: 80%;
+}
+
+p.outer {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+section {
+  border-left: $border;
+  padding-left: 1rem;
+  margin: 0 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  position: relative;
+
+  & * {
+    margin: 0;
+    text-align: left;
+  }
+
+  p.subtitle {
+    margin-top: 0.1rem;
+    text-transform: uppercase;
+    text-align: start;
+  }
+
+  h1 {
+    //font-size: 3rem;
+    margin-bottom: 0.1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    //font-size: 1.5rem;
+  }
+
+  button {
+    background: none;
+    border: $border;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    width: calc(100% - 2rem);
+    margin: 1rem 0 1rem 0;
+  }
+
+  img.bg {
+    position: absolute;
+    right: -50%;
+    bottom: 0;
+    opacity: 30%;
+    height: 70%;
+    width: auto;
+  }
+}
+
+
